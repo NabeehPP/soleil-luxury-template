@@ -354,10 +354,6 @@ button {
   font-weight: 300;
   line-height: 1.1;
   letter-spacing: -0.01em;
-
-  color: #ffffff !important;
-  text-shadow: 0 2px 20px rgba(0,0,0,0.35);
-
   animation: fadeInUp 1.2s var(--transition-smooth) 0.1s both;
 }
 
@@ -1529,12 +1525,13 @@ footer {
     padding: 80px 20px;
   }
 
-  .story-collage{
+   .story-collage{
       display:flex;
       flex-direction:column;
       gap:16px;
   }
-  .collage-img-large{
+
+   .collage-img-large{
       height:300px;
       border-radius:24px;
   }
@@ -1545,10 +1542,9 @@ footer {
       max-width:none;
   }
 
-  .collage-small-stack{
+   .collage-small-stack{
       display:none;
   }
-
 
   .collage-img-small {
     width: 50%;
