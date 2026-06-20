@@ -1529,24 +1529,26 @@ footer {
     padding: 80px 20px;
   }
 
-  .story-collage {
-    grid-template-columns: 1fr;
+  .story-collage{
+      display:flex;
+      flex-direction:column;
+      gap:16px;
+  }
+  .collage-img-large{
+      height:300px;
+      border-radius:24px;
   }
 
-  .collage-img-large {
-    height: 380px;
+  .collage-badge{
+      position:static;
+      margin-top:12px;
+      max-width:none;
   }
 
-  .collage-badge {
-    left: 20px;
-    bottom: -20px;
+  .collage-small-stack{
+      display:none;
   }
 
-  .collage-small-stack {
-    flex-direction: row;
-    gap: 16px;
-    margin-top: 16px;
-  }
 
   .collage-img-small {
     width: 50%;
