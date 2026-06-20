@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Maison Soleil — Luxury Brochure Website Template</title>
+  <meta name="description" content="An ultra-premium, high-converting brochure website template inspired by Aman Resorts, Apple simplicity, and Framer aesthetics. Ideal for hotels, fine dining, cafes, and wellness clubs.">
+  <meta name="author" content="Antigravity Web Design">
+  
+  <!-- Styling Sheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ─── Pill GLASS NAVIGATION ─── -->
+  <div class="nav-wrapper">
+    <nav class="glass-nav" id="main-nav">
+      <a href="#" class="nav-logo">
+        <div class="logo-icon">M</div>
+        <span class="logo-name">Maison Soleil</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#offerings" class="nav-link">Offerings</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <!-- Theme Mode Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+          <svg class="theme-icon-dark" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="theme-icon-light" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        
+        <!-- Primary Contact CTA -->
+        <a href="#contact" class="cta-btn-primary" id="nav-cta-btn">Book Your Stay</a>
+        
+        <!-- Hamburger (Mobile) -->
+        <button class="hamburger-btn" id="mobile-menu-toggle" aria-label="Toggle Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Mobile Fullscreen Menu -->
+  <div class="mobile-menu-overlay" id="mobile-menu">
+    <div class="mobile-menu-header">
+      <a href="#" class="nav-logo">
+        <div class="logo-icon">M</div>
+        <span class="logo-name">Maison Soleil</span>
+      </a>
+      <button class="close-btn" id="mobile-menu-close" aria-label="Close Menu" style="color:var(--text-primary);">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="mobile-menu-links">
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#services" class="mobile-nav-link">Services</a>
+      <a href="#gallery" class="mobile-nav-link">Gallery</a>
+      <a href="#offerings" class="mobile-nav-link">Offerings</a>
+      <a href="#reviews" class="mobile-nav-link">Reviews</a>
+      <a href="#faq" class="mobile-nav-link">FAQ</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
+
+    <div class="mobile-menu-footer">
+      <a href="https://wa.me/919999999999" target="_blank" class="cta-btn-primary" style="text-align:center; background-color:#25d366;">
+        WhatsApp Chat
+      </a>
+    </div>
+  </div>
+
+  <!-- ─── HERO SECTION ─── -->
+  <section class="hero" id="home">
+    <div class="hero-image-bg" id="hero-image-bg"></div>
+    
+    <div class="hero-content">
+      <div class="hero-eyebrow" id="hero-eyebrow-text">
+        <span>★</span> BOUTIQUE HOTEL & SPA
+      </div>
+      <h1 class="hero-headline" id="hero-headline-text" te="white">
+        Where Luxury<br>Meets Serenity
+      </h1>
+      <p class="hero-subheadline" id="hero-subheadline-text">
+        An intimate collection of 24 suites, each a world unto itself. Experience Mediterranean luxury with personalized, digital-first hospitality.
+      </p>
+      
+      <div class="hero-actions">
+        <a href="#contact" class="cta-btn-primary" id="hero-primary-cta">
+          <span>Book Your Stay</span>
+        </a>
+        <a href="#offerings" class="cta-btn-secondary" id="hero-secondary-cta">
+          <span>Explore Rooms</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12,5 19,12 12,19"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Rating Badge (Screenshot matched) -->
+    <div class="hero-rating-badge reveal">
+      <div class="stars">★★★★★</div>
+      <div class="rating-value">4.9 / 5.0 Rating</div>
+      <div class="rating-reviews">2,400+ Guest Reviews</div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="hero-scroll-indicator">
+      <span class="scroll-text">Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <main>
+    
+    <!-- ─── STORY SECTION (MAGAZINE STYLE COLLAGE) ─── -->
+    <section class="section" id="about">
+      <div class="section-inner story-grid">
+        
+        <!-- Collage column -->
+        <div class="story-collage reveal">
+          <div class="collage-large-wrapper">
+            <img src="assets/hotel_hero.png" alt="Luxury suite interior" class="collage-img collage-img-large" id="story-img-large">
+            <!-- Pinned badge -->
+            <div class="collage-badge" id="story-badge-text">14+ Years of Excellence</div>
+          </div>
+          <div class="collage-small-stack">
+            <img src="assets/restaurant_hero.png" alt="Infinity Pool" class="collage-img collage-img-small" id="story-img-small-1">
+            <img src="assets/cafe_hero.png" alt="Soaking tub view" class="collage-img collage-img-small" id="story-img-small-2">
+          </div>
+        </div>
+        
+        <!-- Text content column -->
+        <div class="story-content reveal">
+          <div>
+            <span class="section-eyebrow" id="story-eyebrow-text">OUR STORY</span>
+            <h2 class="section-title" id="story-headline-text">A sanctuary built on craft and intention</h2>
+          </div>
+          <p class="story-text-primary" id="story-text-1">
+            Founded in 2010 by architect Élodie Marais, Maison Soleil grew from a singular vision: to create a space where luxury felt intimate rather than impersonal. Every material was chosen by hand, every surface considered at length.
+          </p>
+          <p class="story-text-secondary" id="story-text-2">
+            Today, we remain a family-owned property with deep roots in the local community. Our team has been with us an average of seven years — and that continuity shows in every interaction.
+          </p>
+          
+          <!-- Statistics -->
+          <div class="story-stats" id="story-stats-container">
+            <div class="stat-block">
+              <div class="stat-value">4,800+</div>
+              <div class="stat-label">Happy Guests</div>
+            </div>
+            <div class="stat-block">
+              <div class="stat-value">98%</div>
+              <div class="stat-label">Satisfaction Rate</div>
+            </div>
+            <div class="stat-block">
+              <div class="stat-value">12</div>
+              <div class="stat-label">Industry Awards</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── SERVICES SECTION ─── -->
+    <section class="section services-bg" id="services">
+      <div class="section-inner">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">WHAT WE OFFER</span>
+          <h2 class="section-title" id="services-title">Curated Guest Experiences</h2>
+          <p class="section-subtitle" id="services-subtitle">
+            We design every detail of your stay to offer absolute relaxation, modern convenience, and unforgettable memories.
+          </p>
+        </div>
+
+        <div class="services-grid" id="services-grid">
+          <!-- Populated Dynamically by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── GALLERY (PINTEREST MASONRY) ─── -->
+    <section class="section" id="gallery">
+      <div class="section-inner">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">THE GALLERY</span>
+          <h2 class="section-title">A Visual Journey</h2>
+          <p class="section-subtitle">A glimpse inside the architectural lines, textures, and sensory moments of our environments.</p>
+        </div>
+
+        <div class="gallery-grid reveal">
+          <!-- Item 1 (Wide) -->
+          <div class="gallery-item span-h2 span-v2">
+            <img src="assets/hotel_hero.png" alt="Luxury hotel room layout" loading="lazy">
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">The Sanctuary Suite</h3>
+            </div>
+          </div>
+          <!-- Item 2 (Tall) -->
+          <div class="gallery-item span-v2">
+            <img src="assets/restaurant_hero.png" alt="Fine dining presentation" loading="lazy">
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">Intimate Fine Dining</h3>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="gallery-item">
+            <img src="assets/cafe_hero.png" alt="Coffee pouring close-up" loading="lazy">
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">Artisanal Coffee Bar</h3>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="gallery-item">
+            <img src="assets/gym_hero.png" alt="Wellness rack weights" loading="lazy">
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">Athletic Performance</h3>
+            </div>
+          </div>
+          <!-- Item 5 (Wide) -->
+          <div class="gallery-item span-h2">
+            <img src="assets/hotel_hero.png" alt="Lounge area" loading="lazy">
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">Relaxation Space</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FEATURED OFFERINGS ─── -->
+    <section class="section offerings-bg" id="offerings">
+      <div class="section-inner">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">FEATURED SELECTION</span>
+          <h2 class="section-title" id="offerings-title">Signature Sanctuary Suites</h2>
+          <p class="section-subtitle" id="offerings-subtitle">
+            Explore our collection of bespoke architectural spaces designed for tranquility and luxury.
+          </p>
+        </div>
+
+        <div class="offerings-grid" id="offerings-grid">
+          <!-- Populated Dynamically by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SOCIAL PROOF & TESTIMONIALS ─── -->
+    <section class="section testimonials-section" id="reviews">
+      <div class="section-inner testimonial-slider-wrapper reveal">
+        <span class="section-eyebrow" style="text-align:center;">REVIEWS</span>
+        
+        <div class="testimonial-slides-window">
+          <div class="testimonial-slides-container" id="testimonial-slides-container">
+            <!-- Slide 1 -->
+            <div class="testimonial-slide">
+              <p class="testimonial-quote">
+                "An absolute masterclass in luxury hospitality. The digital integration felt seamless, the rooms were architecturally gorgeous, and the service was warm and deeply personal."
+              </p>
+              <div class="testimonial-user">
+                <span class="user-name">Charlotte Montgomery</span>
+                <span class="user-title">Travel & Leisure Critic</span>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="testimonial-slide">
+              <p class="testimonial-quote">
+                "We booked a complete buyout for our anniversary. The culinary preparation, wine pairing cellar, and focus on absolute guest privacy exceeded every hotel we've visited globally."
+              </p>
+              <div class="testimonial-user">
+                <span class="user-name">David Steinberg</span>
+                <span class="user-title">Private Member</span>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="testimonial-slide">
+              <p class="testimonial-quote">
+                "The attention to small details — from the hand-textured micro-cement bathrooms to the complimentary airport shuttle — makes this template the ultimate benchmark of modern luxury."
+              </p>
+              <div class="testimonial-user">
+                <span class="user-name">Alexander Wright</span>
+                <span class="user-title">Architectural Digest Contributor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="testimonial-controls">
+          <button class="slider-arrow-btn" id="testimonial-prev" aria-label="Previous Review">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12,19 5,12 12,5"></polyline>
+            </svg>
+          </button>
+          <button class="slider-arrow-btn" id="testimonial-next" aria-label="Next Review">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12,5 19,12 12,19"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Client logos (Clean Aman Style text logos) -->
+        <div class="client-logos">
+          <span class="logo-item">Vogue</span>
+          <span class="logo-item">Condé Nast</span>
+          <span class="logo-item">Aman</span>
+          <span class="logo-item">Michelin Guide</span>
+          <span class="logo-item">Forbes Travel</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FAQ SECTION ─── -->
+    <section class="section faq-bg" id="faq">
+      <div class="section-inner faq-layout reveal">
+        <div>
+          <span class="section-eyebrow">COMMON QUESTIONS</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Everything you need to understand about reservations, custom event hosting, and guest policies.</p>
+        </div>
+
+        <div class="faq-accordion" id="faq-accordion">
+          <!-- Populated Dynamically by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CONTACT SECTION ─── -->
+    <section class="section contact-bg" id="contact">
+      <div class="section-inner contact-layout reveal">
+        
+        <!-- Left details col -->
+        <div class="contact-info-col">
+          <div>
+            <span class="section-eyebrow">GET IN TOUCH</span>
+            <h2 class="section-title" id="contact-section-heading">Let's Start Your <br><span class="accent-span">Booking</span></h2>
+            <p class="section-subtitle">Fill out our reservation inquiry. Our guest relations team will review availability and connect within 4 hours.</p>
+          </div>
+
+          <div class="contact-action-box">
+            <!-- Call Phone -->
+            <a href="tel:+919999999999" class="contact-item-link">
+              <div class="contact-icon-wrapper">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="contact-item-text">
+                <span class="contact-item-label">Telephone Concierge</span>
+                <span class="contact-item-value">+91 9999 999 999</span>
+              </div>
+              <span class="contact-link-arrow">→</span>
+            </a>
+
+            <!-- Email Us -->
+            <a href="mailto:reservations@maisonsoleil.com" class="contact-item-link">
+              <div class="contact-icon-wrapper">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-item-text">
+                <span class="contact-item-label">Email Channels</span>
+                <span class="contact-item-value">reservations@maisonsoleil.com</span>
+              </div>
+              <span class="contact-link-arrow">→</span>
+            </a>
+          </div>
+
+          <!-- Business Hours -->
+          <div class="business-hours-box">
+            <h3 class="hours-heading">Operating Hours</h3>
+            <div class="hours-table" id="contact-hours-list">
+              <!-- Populated Dynamically by JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Right form col -->
+        <div class="contact-form-container">
+          <form class="contact-form" id="contact-form" onsubmit="event.preventDefault(); alert('Inquiry Sent! Our desk will connect on email/WhatsApp.');">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Full Name</label>
+                <input type="text" id="form-name" class="form-input" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label for="form-email" class="form-label">Email Address</label>
+                <input type="email" id="form-email" class="form-input" placeholder="name@domain.com" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="form-phone" class="form-label">Phone / WhatsApp</label>
+              <input type="tel" id="form-phone" class="form-input" placeholder="+91 00000 00000" required>
+            </div>
+
+            <!-- Dynamic Niche Fields Placement -->
+            <div id="contact-niche-fields">
+              <!-- Populated Dynamically by JS -->
+            </div>
+
+            <div class="form-group">
+              <label for="form-notes" class="form-label">Special Requests / Notes</label>
+              <textarea id="form-notes" class="form-textarea" placeholder="Tell us about dietary allergies, transfer requests, or room preferences..."></textarea>
+            </div>
+
+            <button type="submit" class="form-submit-btn">
+              <span>Book Your Stay</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12,5 19,12 12,19"></polyline>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FLOATING WHATSAPP BUTTON ─── -->
+  <a href="https://wa.me/919999999999" class="whatsapp-floating-btn" target="_blank" aria-label="Chat on WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+    </svg>
+  </a>
+
+  <!-- ─── PREMIUM LUXURY FOOTER ─── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-logo">
+            <div class="footer-logo-icon">M</div>
+            <span class="footer-logo-name">Maison Soleil</span>
+          </div>
+          <p class="footer-desc">
+            A premium architectural brochure template engineered to elevate conversion rates for luxury hotels, fine dining menus, specialty roasteries, and wellness spaces.
+          </p>
+        </div>
+        
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#about" class="footer-link">Our Story</a></li>
+            <li><a href="#services" class="footer-link">Guest Services</a></li>
+            <li><a href="#gallery" class="footer-link">Visual Gallery</a></li>
+            <li><a href="#offerings" class="footer-link">Offerings</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Luxury Locations</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Montpellier, France</a></li>
+            <li><a href="#" class="footer-link">Mahé, Seychelles</a></li>
+            <li><a href="#" class="footer-link">Milan, Italy</a></li>
+            <li><a href="#" class="footer-link">Wayanad, India</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Legal & Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:reservations@maisonsoleil.com" class="footer-link">reservations@maisonsoleil.com</a></li>
+            <li><a href="#" class="footer-link">Privacy Regulations</a></li>
+            <li><a href="#" class="footer-link">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Maison Soleil Template. Created with Aman & Apple design principles.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-link" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="Twitter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- App Script -->
+  <script src="app.js"></script>
+</body>
+</html>
